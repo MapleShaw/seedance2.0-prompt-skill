@@ -1,34 +1,22 @@
-# Seedance 2.0 运镜与风格词汇库
+# Seedance 2.0 词汇库（运镜·风格·画质·大气）
 
-> Seedance 2.0 对中英文混合描述效果更好。运镜是决定视频质量的关键——同样的场景，加上精准运镜描述就是"电影感"和"随手拍"的区别。
+> Seedance 2.0 对中英文混合描述效果更好。本文件收录：
+> - **运镜修饰词**（速度/情绪/风格修饰、组合模板）
+> - **视觉风格词**
+> - **画质锚定词库**
+> - **大气与镜头质感词库**
+> - **光影三层结构词库**
+> - **后期处理与收束词库**
+>
+> 📷 **运镜坐标系统已升级**：基础运镜动作（Pan/Dolly/Zoom/Crane/Orbit...）和情绪→坐标编码，请查阅 [camera-codec.md](camera-codec.md)（相机四维编码系统）。本文件只保留"修饰词"部分。
 
-## 三级运镜进阶体系
+---
 
-### Level 1：基础运镜动作（必会）
+## 运镜修饰词（赋予运镜灵魂）
 
-覆盖 80% 的基础需求。新手从 Pan、Dolly、Zoom 三个开始即可。
+与 [camera-codec.md](camera-codec.md) 中的基础运镜动作组合使用，控制速度、情绪和风格。
 
-| 英文术语 | 中文 | 说明 |
-|----------|------|------|
-| Pan | 摇移（水平） | 镜头固定，水平转动 |
-| Tilt | 摇移（垂直） | 镜头固定，垂直转动 |
-| Zoom In/Out | 变焦推进/拉远 | 焦距变化，不移动机位 |
-| Dolly In/Out | 推轨推进/后拉 | 整个机位前后移动 |
-| Truck | 平移 | 机位横向移动 |
-| Crane Up/Down | 摇臂升/降 | 机位垂直升降 |
-| Orbit | 环绕 | 围绕主体旋转 |
-| Arc Shot | 弧形镜头 | 沿弧线运动 |
-| Tracking Shot | 跟踪镜头 | 跟随主体移动 |
-| Static Shot | 固定镜头 | 机位不动 |
-| Push In | 推进 | 缓慢靠近主体 |
-| Pull Out | 拉出 | 缓慢远离主体 |
-| Pedestal | 升降 | 垂直平移（区别于 Crane） |
-
-### Level 2：修饰词（赋予运镜灵魂）
-
-通过修饰词控制速度、情绪和风格，让运镜为故事服务。
-
-**速度修饰：**
+### 速度修饰
 
 | 修饰词 | 适用场景 | 示例 |
 |--------|----------|------|
@@ -39,7 +27,7 @@
 | Gradual / 渐进的 | 自然过渡 | Gradual 10-second crane up |
 | Sudden / 突然的 | 惊吓、转折 | Sudden whip pan to reveal the villain |
 
-**情绪修饰：**
+### 情绪修饰
 
 | 修饰词 | 适用场景 | 示例 |
 |--------|----------|------|
@@ -50,7 +38,7 @@
 | Epic / 史诗的 | 宏大场面 | Epic crane up revealing the army |
 | Dynamic / 动态的 | 活力场景 | Dynamic tracking through the dance floor |
 
-**风格修饰：**
+### 风格修饰
 
 | 修饰词 | 效果 | 示例 |
 |--------|------|------|
@@ -61,9 +49,9 @@
 | Steadicam / 斯坦尼康 | 专业级稳定 | Steadicam follow through the long hallway |
 | POV / 主观视角 | 第一人称沉浸 | POV walking through the haunted house |
 
-### Level 3：组合运镜（复合技巧）
+### 组合运镜速查
 
-将 2-3 个运镜叠加，用 `+` 或 `while` 连接。一次不要超过 3 个动作。
+将 2-3 个运镜叠加，用 `+` 或 `while` 连接。**一次不要超过 3 个动作（四维编码系统的核心铁律：最多双轴运动）。**
 
 | 组合 | 效果 | 适用场景 |
 |------|------|----------|
@@ -83,18 +71,7 @@ gradually revealing it's part of a massive ancient temple,
 epic scale, golden hour lighting
 ```
 
-## 视觉风格词汇
-
-| 类别 | 关键词 |
-|------|--------|
-| 画面质感 | 电影感、胶片质感、8K、HDR、RAW质感、photorealistic |
-| 影像风格 | 好莱坞大片、独立电影、纪录片、MV风格、2.35:1宽银幕 |
-| 色调氛围 | 暖色调、冷色调、莫兰迪色系、赛博朋克霓虹、golden hour |
-| 艺术风格 | 写实主义、超现实主义、蒸汽波、中国风水墨、3D国漫CG |
-| 光影效果 | 自然光、侧逆光、丁达尔效应/god rays、霓虹灯光、体积光 |
-| 景深控制 | shallow depth of field / 浅景深、deep focus / 深焦、rack focus / 焦点切换 |
-
-## 运镜提示词万能模板
+### 运镜万能模板
 
 ```
 [主体描述 Subject],
@@ -104,11 +81,28 @@ epic scale, golden hour lighting
 [技术参数 Technical]
 ```
 
-## 常见问题
+> 💡 需要精准控制镜头的四维坐标（Z 距离 / Y 高度 / X 方位 / F 滤镜）、情绪→坐标编码速查表、多镜头叙事坐标递进——请直接查阅 [camera-codec.md](camera-codec.md)。
+
+### 常见问题
 
 - **运镜不流畅？** 避免模糊词 "move"，改用精确术语如 `Smooth 3-second dolly forward`，加 `stabilized` 或 `gimbal shot`
 - **控制运镜速度？** 用明确时间：`3-second slow zoom` / `Rapid 1-second whip pan`
-- **多个运镜冲突？** 一次最多 2-3 个动作，用 `+` 或 `while` 连接
+- **多个运镜冲突？** 一次最多 2-3 个动作，用 `+` 或 `while` 连接。每个镜头最多双轴运动。
+
+---
+
+## 视觉风格词汇
+
+| 类别 | 关键词 |
+|------|--------|
+| 画面质感 | 电影感、胶片质感、8K、HDR、RAW 质感、photorealistic |
+| 影像风格 | 好莱坞大片、独立电影、纪录片、MV 风格、2.35:1 宽银幕 |
+| 色调氛围 | 暖色调、冷色调、莫兰迪色系、赛博朋克霓虹、golden hour |
+| 艺术风格 | 写实主义、超现实主义、蒸汽波、中国风水墨、3D 国漫 CG |
+| 光影效果 | 自然光、侧逆光、丁达尔效应/god rays、霓虹灯光、体积光 |
+| 景深控制 | shallow depth of field / 浅景深、deep focus / 深焦、rack focus / 焦点切换 |
+
+> 💡 商业级/电影级的美学约束（Octane 渲染品质、冷暖色调对比系统、极简构图法则）详见 [aesthetic-constraints.md](aesthetic-constraints.md)。
 
 ---
 
