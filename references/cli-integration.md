@@ -77,7 +77,7 @@ dreamina image2video \
 **关键点**：
 - **比例自动从输入图推断**，不要传 `--ratio`（传了会报错）
 - `--prompt` 用 `$(cat file)` 读文件的方式传，彻底避开 shell 转义问题（见第 5 节）
-- `--duration` 支持 `4-15`，路径 C 默认 `15`（打满 15s）
+- `--duration` 支持 `4-15`，**路径 C v2 默认值由 image-to-prompt.md 的"建议时长"推算决定，不再硬编码 15**（v2 升级）
 - `--poll=120` 提交后最多前台等 120 秒，超时自动 fallback 到 `query_result`
 
 ### 2.2 `multimodal2video`（全能参考场景）

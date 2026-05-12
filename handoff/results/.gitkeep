@@ -1,0 +1,4 @@
+# 这个目录是晚上 Agent 跑 case 的产出存放处
+# 文件命名规范：case-XX-<简称>.md
+# 视频存放：videos/case-XX-<简称>.mp4
+# 当晚总结：summary.md
