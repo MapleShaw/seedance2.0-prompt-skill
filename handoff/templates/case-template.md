@@ -1,6 +1,6 @@
 # Case-XX：[简称] · 路径 C v2 验证
 
-> 把本文件复制到 `handoff/results/case-XX-<简称>.md` 后填写。
+> 把本文件复制到 `handoff/results/cases/case-XX-<简称>.md` 后填写。
 
 ---
 

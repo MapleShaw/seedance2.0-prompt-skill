@@ -43,7 +43,7 @@ description: >
 4. **分镜板驱动（路径 D，v0.1 试运行）**：用户上传 N 宫格分镜板/漫画分镜，要求"按这几格生成"。需先选 D-1（≤4 格→单条多段时间戳）或 D-2（≥5 格→多条独立 prompt+剪辑节奏建议），完整方法论见 `handoff/proposals/path-D-storyboard-driven-draft.md`。
 5. **参考素材优先**：大部分好的 AI 视频不是纯文本生成的。先做首帧图、找参考视频，再写提示词。
 
-详见 [creative-strategy.md](references/creative-strategy.md)（创意策略）、[production-pipeline.md](references/production-pipeline.md)（长视频生产流水线）、[image-to-prompt.md](references/image-to-prompt.md)（图片驱动路径 C 完整方法论）。试片反馈后的**加长分段、清明脑洞、ASMR 真人向、AI 脱口秀**见 [prompts/11-用户反馈延展.md](prompts/11-用户反馈延展.md)。
+详见 [creative-strategy.md](references/creative-strategy.md)（创意策略）、[production-pipeline.md](references/production-pipeline.md)（长视频生产流水线）、[image-to-prompt.md](references/image-to-prompt.md)（图片驱动路径 C 完整方法论）。试片反馈后的**加长分段、清明脑洞、ASMR 真人向、AI 脱口秀**见 [11-用户反馈延展.md](projects/爆款实验/11-用户反馈延展.md)。
 
 ## 核心规则
 
@@ -238,7 +238,7 @@ Seedance 2.0 = **多模态参考能力（可参考万物）** + 强创意生成 
 > ✅ **有效做法**：用"对标《黑神话：悟空》/《黑神话：潘金蓮》"做一句话锚定，
 > 配合"衬衫有咖啡渍、键盘磨得发光"等生活痕迹描述、"UI 克制不抢戏"等视觉类比。
 > ❌ **无效做法**：堆砌 Octane / SSS / 工业光魔 / 像素数值（≤45px）/ 20+ 条禁止清单 ——
-> 反而让 AI 拘束、画面变平庸。参考 `prompts/黑神话系列.md` 潘金莲案例的 ~500 字极简写法。
+> 反而让 AI 拘束、画面变平庸。参考 `projects/黑神话-其他/潘金莲.md` 案例的 ~500 字极简写法。
 
 ### 核心规则速查
 

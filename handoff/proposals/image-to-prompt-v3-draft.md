@@ -246,10 +246,10 @@
 
 | 场景类型 | Hook 范式 | 文件位置 |
 |---------|---------|---------|
-| 演唱会前排追星 | 凝视模式 | `handoff/results/case-01-演唱会.md` 第 15 节 |
-| 多人场景合影前打闹 | 凝视模式 + 跨人物互动 | `handoff/results/case-03-化妆间.md` 第 15 节 |
-| 课堂偷拍 | 凝视模式 + 时间分段 | `handoff/results/case-04-讲课.md` 第 15 节 |
-| 直播流偷拍看球 | 凝视模式（奠基） | `handoff/results/case-05-球场大屏.md` 第 15 节 |
+| 演唱会前排追星 | 凝视模式 | `handoff/results/cases/case-01-演唱会.md` 第 15 节 |
+| 多人场景合影前打闹 | 凝视模式 + 跨人物互动 | `handoff/results/cases/case-03-化妆间.md` 第 15 节 |
+| 课堂偷拍 | 凝视模式 + 时间分段 | `handoff/results/cases/case-04-讲课.md` 第 15 节 |
+| 直播流偷拍看球 | 凝视模式（奠基） | `handoff/results/cases/case-05-球场大屏.md` 第 15 节 |
 
 ---
 

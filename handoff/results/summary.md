@@ -741,7 +741,7 @@ handoff/results/
 - ✅ `references/image-to-prompt.md` 第 3 类敏感词清单：扩展夜场氛围 BGM 词清单 + 夜场环境 4 元素拆解策略
 - ✅ `references/image-to-prompt.md` 第 4 类敏感词清单：明确推翻 v4 两个错误假设（叙事意图/横扫运镜）
 - ✅ `references/image-to-prompt.md` 五关扫描脚本：新增 `night_bgm` 检测项
-- ✅ `handoff/results/case-17-公关经理介绍排成一排.md`：完整 11 版翻盘历程沉淀
+- ✅ `handoff/results/cases/case-17-公关经理介绍排成一排.md`：完整 11 版翻盘历程沉淀
 - ⏳ 待办：在 image-to-prompt.md 顶部加"版权审查 SOP 速查"索引（让未来 Agent 一进来就看到）
 
 ---
