@@ -118,7 +118,7 @@ dreamina image2video \
 - gen_status: [success / fail]
 - 失败 reason（如有）:
 - video_url（成功）:
-- 本地保存路径: `experiments/videos/case-XX-<简称>.mp4`
+- 本地保存路径: `~/Downloads/case-XX-<简称>.mp4`（成片不入库）
 
 ---
 

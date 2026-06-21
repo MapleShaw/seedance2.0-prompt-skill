@@ -195,7 +195,7 @@
 
 ### 7.3 反哺路径 D 草案 + SKILL
 
-建议在 `experiments/proposals/path-D-storyboard-driven-draft.md` 中补充以下经验：
+建议在 `references/storyboard-driven.md` 中补充以下经验：
 
 ```markdown
 ### 路径 D-1 电影预告子模式（v0.2 新增）

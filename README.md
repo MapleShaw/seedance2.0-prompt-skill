@@ -108,7 +108,8 @@ seedance-prompt-skill/
 │   ├── platform-specs.md          # 平台参数与限制
 │   ├── examples.md                # 十大能力提示词示例库
 │   ├── image-generation.md        # 图片生成（角色图/首帧图）规范
-│   ├── image-to-prompt.md         # 图生视频路径 C/D 完整方法论 + 版权审查 SOP
+│   ├── image-to-prompt.md         # 图生视频（路径 C）方法论 + 版权审查 SOP
+│   ├── storyboard-driven.md       # 分镜板驱动（路径 D）方法论
 │   ├── cli-integration.md         # dreamina CLI 集成（可选增值）
 │   ├── creative-strategy.md       # 创意策略（≤15s 爆款模式）
 │   ├── camera-codec.md            # 📷 相机四维编码系统（Z/Y/X/F）
@@ -127,13 +128,9 @@ seedance-prompt-skill/
 │   └── 爆款实验/        # 极简爆款 / 调研爆款 / 延展创意集 / 测试清单 / 反馈延展
 │
 └── experiments/      # 🧪 研发与实测日志（方法论是怎么踩坑迭代出来的）
-    ├── creative-plan.md           # 创意规划
-    ├── proposals/                 # 方法论草案（路径 C v3 / 路径 D）
-    ├── templates/                 # case / summary 记录模板
-    ├── sessions/                  # 工作会话日志
     ├── summary.md                 # 实测方法论总结（含即梦版权审查 SOP）
     ├── cases/                     # 30+ 个图生视频实测案例（含完整迭代轨迹）
-    └── videos/                    # 成片本地存档
+    └── templates/                 # case / summary 记录模板
 ```
 
 ## 📚 文档
@@ -145,7 +142,8 @@ seedance-prompt-skill/
 | 拉到商业级 / 电影级画质 | [`references/aesthetic-constraints.md`](references/aesthetic-constraints.md) |
 | 制作 >15 秒长视频 | [`references/production-pipeline.md`](references/production-pipeline.md) · [`long-video-strategy.md`](references/long-video-strategy.md) |
 | 多片段剪辑节奏 | [`references/editing-rhythm.md`](references/editing-rhythm.md) |
-| 用一张图生成视频 / 分镜板驱动 | [`references/image-to-prompt.md`](references/image-to-prompt.md) |
+| 用一张图生成视频（路径 C） | [`references/image-to-prompt.md`](references/image-to-prompt.md) |
+| 分镜板 / 多宫格驱动（路径 D） | [`references/storyboard-driven.md`](references/storyboard-driven.md) |
 | 生成角色图 / 首帧图 | [`references/image-generation.md`](references/image-generation.md) |
 | 平台参数与硬限制 | [`references/platform-specs.md`](references/platform-specs.md) |
 | 实测方法论怎么来的 | [`experiments/`](experiments/) |

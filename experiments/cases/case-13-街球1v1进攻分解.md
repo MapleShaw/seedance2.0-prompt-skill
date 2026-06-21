@@ -202,7 +202,7 @@
 
 ### 7.3 反哺路径 D 草案
 
-建议在 `experiments/proposals/path-D-storyboard-driven-draft.md` 中补充：
+建议在 `references/storyboard-driven.md` 中补充：
 
 ```markdown
 ### 路径 D 边界 case 处理策略（v0.2 新增）
