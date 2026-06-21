@@ -11,7 +11,7 @@
 - **跑了 5 个 case，1 个主动放弃，4 个最终全部通过验证** ✅
 - 经历 **v2 → v3 → v4 → v4.1 → v5** 5 轮迭代
 - **最重大成果**：路径 C 方法论 v3 完整定型，**新增"凝视模式"作为路径 C 第二个 Hook 范式**，并沉淀出 **8 条新方法论原则**（详见第 4 节）
-- **明天最优先做的事**：把这套方法论写进 `references/image-to-prompt.md`（已起草草案：`handoff/proposals/image-to-prompt-v3-draft.md`）
+- **明天最优先做的事**：把这套方法论写进 `references/image-to-prompt.md`（已起草草案：`experiments/proposals/image-to-prompt-v3-draft.md`）
 
 ---
 
@@ -229,7 +229,7 @@ v2 缺失"凝视模式"是本次最大盲区。v3 必须新增这个范式。
 
 ### 5.1 是否将本方法论写进 `references/image-to-prompt.md`（最高优先级）
 
-**Agent 已起草 v3 草案**：`handoff/proposals/image-to-prompt-v3-draft.md`
+**Agent 已起草 v3 草案**：`experiments/proposals/image-to-prompt-v3-draft.md`
 
 包含：
 - 双范式（反应模式 vs 凝视模式）的判断流程
@@ -270,7 +270,7 @@ case-05-球场大屏.md  → 第 15 节 v4.1 完整 Prompt（1408 字符）
 ## 7. 文件清单
 
 ```
-handoff/results/
+experiments/
 ├── summary.md                ← 本文件（v3 方法论完整定型）
 ├── case-01-演唱会.md          ✅ 含 v2→v3→v4→v5 完整迭代轨迹
 ├── case-02-商K.md             ⛔ 已放弃（保留 v2 作为合规风险参考）
@@ -279,7 +279,7 @@ handoff/results/
 ├── case-05-球场大屏.md        ✅ 含 v2→v3→v4→v4.1 完整迭代轨迹（凝视模式奠基 case）
 └── videos/                   ❌ 空（手动工作流，无视频文件）
 
-handoff/proposals/
+experiments/proposals/
 └── image-to-prompt-v3-draft.md  ⭐ Agent 起草的 v3 SKILL 改造草案（待主理人决策）
 ```
 
@@ -298,7 +298,7 @@ handoff/proposals/
 
 ## 9. 接下来该做的（按优先级）
 
-1. **review** `handoff/proposals/image-to-prompt-v3-draft.md` 草案，决定是否合并到 references/
+1. **review** `experiments/proposals/image-to-prompt-v3-draft.md` 草案，决定是否合并到 references/
 2. （可选）跑 3-5 个新场景 case 验证方法论的迁移性
 3. （可选）启动主理人之前提的 "CodeX Gallery 风格的扰动因子→生成→评价→调整闭环"——把 GPT Image+Seedance+评价机制串联起来
 
@@ -377,7 +377,7 @@ handoff/proposals/
 ## 14. 文件清单（第二批新增）
 
 ```
-handoff/results/
+experiments/
 ├── case-09-韩系夜店外自拍.md         ✅ 凝视+抖音味 v3.1 / 8s / 1796 → **272 字（v3 极简）**
 ├── case-10-闺蜜夜游四宫格.md         ✅ 路径 D-1 vlog 拼接 / 15s / 1791 → **478 字（v3 极简）**
 ├── case-11-雨夜女性四宫格电影预告.md  ✅ 路径 D-1 电影预告范式（**新**）/ 15s / 2000 → **486 字（v3 极简）**
@@ -741,7 +741,7 @@ handoff/results/
 - ✅ `references/image-to-prompt.md` 第 3 类敏感词清单：扩展夜场氛围 BGM 词清单 + 夜场环境 4 元素拆解策略
 - ✅ `references/image-to-prompt.md` 第 4 类敏感词清单：明确推翻 v4 两个错误假设（叙事意图/横扫运镜）
 - ✅ `references/image-to-prompt.md` 五关扫描脚本：新增 `night_bgm` 检测项
-- ✅ `handoff/results/cases/case-17-公关经理介绍排成一排.md`：完整 11 版翻盘历程沉淀
+- ✅ `experiments/cases/case-17-公关经理介绍排成一排.md`：完整 11 版翻盘历程沉淀
 - ⏳ 待办：在 image-to-prompt.md 顶部加"版权审查 SOP 速查"索引（让未来 Agent 一进来就看到）
 
 ---

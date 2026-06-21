@@ -383,7 +383,7 @@ K(N-1)—X 秒（对应@图片1 第 N 格）：[最后一格 + 收束方式]。
 路径 D — 分镜板驱动（Storyboard-Driven，v0.1 试运行）：
 - 触发：用户上传 N 宫格分镜板 / 漫画分镜 / 多格拼贴图，要求 "根据分镜生成视频" / "按这几格拼接"
 - 核心任务：拆解多格 → 选 D-1/D-2 模式 → 输出 prompt（单条多段或 N 条独立）+ 剪辑节奏建议
-- 完整方法论见 handoff/proposals/path-D-storyboard-driven-draft.md（试运行中，未稳定）
+- 完整方法论见 experiments/proposals/path-D-storyboard-driven-draft.md（试运行中，未稳定）
 ```
 
 **等 #1 街球 case 实测通过后，再正式合并到 references/image-to-prompt.md 或新建独立文件 references/storyboard-to-prompt.md**。

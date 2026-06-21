@@ -180,7 +180,7 @@
 
 ### 7.3 反哺路径 D 草案
 
-建议在 `handoff/proposals/path-D-storyboard-driven-draft.md` 中补充以下经验：
+建议在 `experiments/proposals/path-D-storyboard-driven-draft.md` 中补充以下经验：
 
 ```markdown
 ### 路径 D-1 vlog 拼接子模式（v0.2 提案）

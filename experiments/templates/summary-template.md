@@ -1,6 +1,6 @@
 # 当晚总结：路径 C v2 真实 case 验证
 
-> 跑完当晚所有 case 后，复制本文件到 `handoff/results/summary.md` 填写。
+> 跑完当晚所有 case 后，复制本文件到 `experiments/summary.md` 填写。
 > 这是主理人明天白天最重要的参考文件。
 
 ---
@@ -85,7 +85,7 @@
 ## 6. 文件清单
 
 ```
-handoff/results/
+experiments/
 ├── summary.md           ← 本文件
 ├── case-01-XXX.md
 ├── case-02-XXX.md

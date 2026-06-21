@@ -1,6 +1,6 @@
 # Case-XX：[简称] · 路径 C v2 验证
 
-> 把本文件复制到 `handoff/results/cases/case-XX-<简称>.md` 后填写。
+> 把本文件复制到 `experiments/cases/case-XX-<简称>.md` 后填写。
 
 ---
 
@@ -118,7 +118,7 @@ dreamina image2video \
 - gen_status: [success / fail]
 - 失败 reason（如有）:
 - video_url（成功）:
-- 本地保存路径: `handoff/results/videos/case-XX-<简称>.mp4`
+- 本地保存路径: `experiments/videos/case-XX-<简称>.mp4`
 
 ---
 

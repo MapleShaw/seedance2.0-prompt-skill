@@ -40,7 +40,7 @@ description: >
 1. **≤15秒（路径 A）**：不要讲故事，做一个"不可能的瞬间"。前2秒必须抓人。概念越简单越好，一个视频只做一件事。
 2. **>15秒（路径 B）**：不要指望一条提示词一步到位。必须走完整前期流程：角色卡片图 → 分镜脚本 → 分镜参考图 → 逐镜头生成 → 后期拼接。
 3. **图片驱动（路径 C，v3.1·极简优先 + 边界条件）**：用户丢图进来想做视频。**核心原则：信任 Seedance 2.0 对图的理解能力，文字只补 4 件事**——①图本身没有的（时长/比例/运镜大方向）；②图存在但需强化的（节奏/情绪 hook/关键瞬间）；③图里需要规避的（不复刻网格/原图水印/分镜板格子）；④保险的硬约束（无文字水印/不可识别真人面孔/合规风险）。**Prompt 控制在 300-500 字符**。**⚠️ 极简策略有边界**（2026-05-23 实测：通过率 25%、还行 50%、翻车 25%）：✅ 多宫格分镜板/凝视模式简单情绪/抖音爆款（需显式 hook）适用；❌ 反应模式（惊讶/慌乱/紧张感）需子节拍展开不可极简；❌ 多宫格画风差异大的叙事拼接 Seedance 无法弥合，需改"心境拼贴"或换图。**Seedance prompt 上限 2000 字符**（Python `len()` **实测**，不准凭中文字感觉估算 —— 详见 [image-to-prompt.md](references/image-to-prompt.md) "极简优先铁律"+"极简优先策略·边界条件验证"+"字符数实测铁律"小节）。
-4. **分镜板驱动（路径 D，v0.1 试运行）**：用户上传 N 宫格分镜板/漫画分镜，要求"按这几格生成"。需先选 D-1（≤4 格→单条多段时间戳）或 D-2（≥5 格→多条独立 prompt+剪辑节奏建议），完整方法论见 `handoff/proposals/path-D-storyboard-driven-draft.md`。
+4. **分镜板驱动（路径 D，v0.1 试运行）**：用户上传 N 宫格分镜板/漫画分镜，要求"按这几格生成"。需先选 D-1（≤4 格→单条多段时间戳）或 D-2（≥5 格→多条独立 prompt+剪辑节奏建议），完整方法论见 `experiments/proposals/path-D-storyboard-driven-draft.md`。
 5. **参考素材优先**：大部分好的 AI 视频不是纯文本生成的。先做首帧图、找参考视频，再写提示词。
 
 详见 [creative-strategy.md](references/creative-strategy.md)（创意策略）、[production-pipeline.md](references/production-pipeline.md)（长视频生产流水线）、[image-to-prompt.md](references/image-to-prompt.md)（图片驱动路径 C 完整方法论）。试片反馈后的**加长分段、清明脑洞、ASMR 真人向、AI 脱口秀**见 [11-用户反馈延展.md](projects/爆款实验/11-用户反馈延展.md)。
@@ -406,7 +406,7 @@ Crane Up缓缓拉远同时上升，露出整朵玫瑰的全貌，继续拉远看
 - **Seedance prompt 字符上限 2000（硬约束）**：必须 Python `len()` **实测**，**不准凭中文字感觉估算**。中文每字=1 字符，标点也算。**实测前不得报"字符数：X"**。实测脚本与超长削减策略见 [image-to-prompt.md](references/image-to-prompt.md) "字符数实测铁律"小节。目标控制在 1900 以内留 100 字符余量
 - **版权敏感词必扫（v5 真因定型版 · case-17 11 版翻盘后）**：
 
-  > ⚠️ **女性 / 室内 / 多人场景必读**：完整 SOP 速查见 `references/image-to-prompt.md` **顶部"🚨 即梦平台版权审查·必读 SOP 速查"小节**（一进文档就看到）。完整翻盘历程见 `handoff/results/summary.md` **第 20 节**。
+  > ⚠️ **女性 / 室内 / 多人场景必读**：完整 SOP 速查见 `references/image-to-prompt.md` **顶部"🚨 即梦平台版权审查·必读 SOP 速查"小节**（一进文档就看到）。完整翻盘历程见 `experiments/summary.md` **第 20 节**。
 
   **5 条铁律速记**：
   1. 🔴🔴 **绝对禁用「夜场氛围 BGM 词」**（v5 真因·case-17 测试 C 实测拦截）：`爵士钢琴 / Jazz Piano / Lounge / Bossa Nova / Smooth Jazz / 萨克斯 / 钢琴酒吧`——能不写 BGM 就不写
@@ -439,7 +439,7 @@ Crane Up缓缓拉远同时上升，露出整朵玫瑰的全貌，继续拉远看
   - **D-2 多条独立**：≥5 格 或 总 >15s，每格一条 prompt + 拼接清单
 - **关键约束**：必须显式声明"不复刻分镜板的网格边框/格子编号/分隔线"，否则模型会把这些当画面元素
 - 完全继承路径 C v3 的双范式 + 8 条原则 + 4 层画质退化
-- 完整方法论见 `handoff/proposals/path-D-storyboard-driven-draft.md`（试运行中，建议先用 1-2 个 case 实测验证再深用）
+- 完整方法论见 `experiments/proposals/path-D-storyboard-driven-draft.md`（试运行中，建议先用 1-2 个 case 实测验证再深用）
 
 ### Step 1：获取用户创意
 

@@ -70,7 +70,7 @@
 
 ## 2. 八条核心方法论原则（按重要性排序）
 
-> 完整说明详见 `handoff/results/summary.md` 第 4 节。本节给出每条的**核心 prompt 模板**。
+> 完整说明详见 `experiments/summary.md` 第 4 节。本节给出每条的**核心 prompt 模板**。
 
 ### ① 图作"框架参考"，不作时间锚点
 
@@ -246,10 +246,10 @@
 
 | 场景类型 | Hook 范式 | 文件位置 |
 |---------|---------|---------|
-| 演唱会前排追星 | 凝视模式 | `handoff/results/cases/case-01-演唱会.md` 第 15 节 |
-| 多人场景合影前打闹 | 凝视模式 + 跨人物互动 | `handoff/results/cases/case-03-化妆间.md` 第 15 节 |
-| 课堂偷拍 | 凝视模式 + 时间分段 | `handoff/results/cases/case-04-讲课.md` 第 15 节 |
-| 直播流偷拍看球 | 凝视模式（奠基） | `handoff/results/cases/case-05-球场大屏.md` 第 15 节 |
+| 演唱会前排追星 | 凝视模式 | `experiments/cases/case-01-演唱会.md` 第 15 节 |
+| 多人场景合影前打闹 | 凝视模式 + 跨人物互动 | `experiments/cases/case-03-化妆间.md` 第 15 节 |
+| 课堂偷拍 | 凝视模式 + 时间分段 | `experiments/cases/case-04-讲课.md` 第 15 节 |
+| 直播流偷拍看球 | 凝视模式（奠基） | `experiments/cases/case-05-球场大屏.md` 第 15 节 |
 
 ---
 

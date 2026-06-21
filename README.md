@@ -9,7 +9,7 @@
 [![Skill](https://img.shields.io/badge/Type-Agent%20Skill-6E56CF)](SKILL.md)
 [![Platform](https://img.shields.io/badge/Platform-即梦%20Seedance%202.0-0EA5E9)](https://jimeng.jianying.com)
 [![Prompts](https://img.shields.io/badge/Prompts-中文-22C55E)]()
-[![Cases](https://img.shields.io/badge/实测案例-30%2B-F59E0B)](handoff/results)
+[![Cases](https://img.shields.io/badge/实测案例-30%2B-F59E0B)](experiments/cases)
 [![License](https://img.shields.io/badge/License-MIT-64748B)](LICENSE)
 
 [快速开始](#-快速开始) · [使用示例](#-使用示例) · [文档](#-文档) · [方法论](#-方法论亮点) · [作品](#-作品展示)
@@ -121,19 +121,19 @@ seedance-prompt-skill/
 ├── projects/         # 🎬 创意作品库（用本 Skill 产出的完整项目）
 │   ├── 黑神话-封神篇/   # 3A 质感短剧 IP 全案（选角立项片 + 5 个单角色片）
 │   ├── 黑神话-其他/     # 潘金莲 / 外卖员 / 打工人
-│   ├── openclaw/       # 城市恋人 / 宠物IP短剧 / 山海战纪 / 无厘头反转段子
+│   ├── 短剧企划/        # 城市恋人 / 宠物IP短剧 / 山海战纪 / 无厘头反转段子
 │   ├── 穿越万象/        # 时间 / 空间 / 维度穿越三部曲
 │   ├── 概念短片/        # 太极生万物 / 时间扭曲者 / 一滴水的宇宙
 │   └── 爆款实验/        # 极简爆款 / 调研爆款 / 延展创意集 / 测试清单 / 反馈延展
 │
-└── handoff/          # 🧪 研发与实测日志（方法论是怎么踩坑迭代出来的）
+└── experiments/      # 🧪 研发与实测日志（方法论是怎么踩坑迭代出来的）
+    ├── creative-plan.md           # 创意规划
     ├── proposals/                 # 方法论草案（路径 C v3 / 路径 D）
     ├── templates/                 # case / summary 记录模板
     ├── sessions/                  # 工作会话日志
-    └── results/
-        ├── summary.md             # 实测方法论总结（含即梦版权审查 SOP）
-        ├── cases/                 # 30+ 个图生视频实测案例（含完整迭代轨迹）
-        └── videos/                # 成片本地存档
+    ├── summary.md                 # 实测方法论总结（含即梦版权审查 SOP）
+    ├── cases/                     # 30+ 个图生视频实测案例（含完整迭代轨迹）
+    └── videos/                    # 成片本地存档
 ```
 
 ## 📚 文档
@@ -148,7 +148,7 @@ seedance-prompt-skill/
 | 用一张图生成视频 / 分镜板驱动 | [`references/image-to-prompt.md`](references/image-to-prompt.md) |
 | 生成角色图 / 首帧图 | [`references/image-generation.md`](references/image-generation.md) |
 | 平台参数与硬限制 | [`references/platform-specs.md`](references/platform-specs.md) |
-| 实测方法论怎么来的 | [`handoff/`](handoff/) |
+| 实测方法论怎么来的 | [`experiments/`](experiments/) |
 
 ## 🧠 方法论亮点
 
@@ -158,14 +158,14 @@ seedance-prompt-skill/
 - **史诗级画质四件套**：品质锚定开头 + 大气连贯声明 + 光影三层结构（光源→光行为→色调）+ 镜头污染增强真实感。
 - **六套剪辑公式**：呼吸式 / 心跳式 / 海浪式 / 子弹时间 / 脉冲式 / 静默锤击，配 AI 素材专属五大对策。
 - **极简优先铁律**：实测发现 300–500 字符的提示词常比 1800+ 字符出片更好——「过度精细的提示词反而是噪声」。
-- **即梦平台内容审核 SOP**：经 8 小时 11 版二分法定位沉淀出的完整规避清单，专治提示词被平台误判。详见 [`handoff/results/summary.md`](handoff/results/summary.md)。
+- **即梦平台内容审核 SOP**：经 8 小时 11 版二分法定位沉淀出的完整规避清单，专治提示词被平台误判。详见 [`experiments/summary.md`](experiments/summary.md)。
 
 ## 🎬 作品展示
 
 `projects/` 收录了用本 Skill 真实产出的完整项目，例如：
 
 - **黑神话·封神篇** — 用提示词「造」出一款不存在的 3A 大作的短剧 IP 全案（选角立项片 + 姜子牙/二郎神/妲己/闻仲/纣王 5 个单角色片）。
-- **openclaw 系列** — 城市恋人、宠物 IP 短剧、山海战纪、无厘头反转段子等成片脚本。
+- **短剧企划系列** — 城市恋人、宠物 IP 短剧、山海战纪、无厘头反转段子等成片脚本。
 - **穿越万象 / 概念短片** — 时间·空间·维度穿越三部曲，太极生万物、一滴水的宇宙等概念向短片。
 
 ## 🗺️ 适用场景
@@ -177,7 +177,7 @@ seedance-prompt-skill/
 欢迎提交新的实测案例、方法论改进或平台能力更新：
 
 1. Fork 本仓库并创建分支；
-2. 新案例请用 [`handoff/templates/case-template.md`](handoff/templates/case-template.md) 模板，放入 `handoff/results/cases/`；
+2. 新案例请用 [`experiments/templates/case-template.md`](experiments/templates/case-template.md) 模板，放入 `experiments/cases/`；
 3. 方法论改动请同步更新对应的 `references/` 文档；
 4. 提交 Pull Request 并简述改动动机与实测效果。
 

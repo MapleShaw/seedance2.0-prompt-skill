@@ -3,7 +3,7 @@
 > 给晚上接手的另一台 Agent 的交接说明
 >
 > **使用方法**：用户在另一台电脑打开 CodeBuddy（或别的能读 git repo 的 AI），第一句话只需要说：
-> > "读 `handoff/sessions/2026-05-12-evening-session.md`，按里面的任务清单跑"
+> > "读 `experiments/sessions/2026-05-12-evening-session.md`，按里面的任务清单跑"
 >
 > 你（接手 Agent）就按本文件操作即可，不需要重新讲来龙去脉。
 
@@ -122,7 +122,7 @@ dreamina user_credit
 
 对每个选定的 case：
 
-1. **复制 case 模板**：`cp handoff/templates/case-template.md handoff/results/cases/case-XX-<简称>.md`，例如 `case-01-生活抓拍.md`
+1. **复制 case 模板**：`cp experiments/templates/case-template.md experiments/cases/case-XX-<简称>.md`，例如 `case-01-生活抓拍.md`
 2. **走完整路径 C v2 流程**（严格按 `references/image-to-prompt.md` 第 1 轮 → 时序询问 → 第 2 轮）：
    - 第 1 轮：读图分析，**必须**输出 `画质来源判定 / 对应画质策略 / 建议时长 / 推算理由 / 平台合规风险` 这些 v2 字段
    - 必须**显式询问主理人时序角色**（首/中/尾/反/闪），不能默认首帧
@@ -131,8 +131,8 @@ dreamina user_credit
 4. **追加 Step 4 CLI 询问**，主理人回 `跑` 才执行
 5. **执行**：用 `dreamina image2video` 跑（参数详见 cli-integration.md）
 6. **轮询查结果**：每 60-90 秒 `dreamina query_result --submit_id=xxx` 查一次，直到 `gen_status=success` 或 `fail`
-7. **下载视频**：成功的话 CLI 会返回 video_url，存到 `handoff/results/videos/case-XX-<简称>.mp4`（下载用 `curl -L "url" -o "path"`）
-8. **记录结果**：把整个过程写进 `handoff/results/cases/case-XX-*.md`（用模板字段）
+7. **下载视频**：成功的话 CLI 会返回 video_url，存到 `experiments/videos/case-XX-<简称>.mp4`（下载用 `curl -L "url" -o "path"`）
+8. **记录结果**：把整个过程写进 `experiments/cases/case-XX-*.md`（用模板字段）
 
 ### 2.4 Step 3：硬约束（不许违反）
 
@@ -147,10 +147,10 @@ dreamina user_credit
 
 ### 2.5 Step 4：交付物清单
 
-今晚结束时，`handoff/results/` 下应该有：
+今晚结束时，`experiments/` 下应该有：
 
 ```
-handoff/results/
+experiments/
 ├── case-01-<简称>.md     # 完整记录：图分析 / 时序选择 / 提示词 / submit_id / 出片效果 / 与 v2 原则的对照
 ├── case-02-<简称>.md
 ├── (case-03-<简称>.md)
@@ -182,8 +182,8 @@ handoff/results/
   - 消耗：XX 积分
   - 出片效果：[一句话]
   - v2 原则验证：原则 X ✓ / 原则 Y ⚠️（说明）
-  - 视频：handoff/results/videos/case-01-xxx.mp4
-  - 完整报告：handoff/results/cases/case-01-xxx.md
+  - 视频：experiments/videos/case-01-xxx.mp4
+  - 完整报告：experiments/cases/case-01-xxx.md
   ```
 - 跑完所有 case 后追加 `summary.md`，格式见模板第 4 节
 - 任何 case 失败，立刻停下问主理人
@@ -193,7 +193,7 @@ handoff/results/
 - **不要修改 `references/*.md` 里的方法论**——v2 是白天那台电脑刚定的，今晚是验证而非再改。如果发现哪条不对，记录到 `summary.md` 的"建议改进"段，让主理人决定。
 - **不要默默吞失败**——失败必须写进 case 报告
 - **不要为了凑 case 数量随便跑**——宁可少跑 1 个，也要每个都按 v2 流程严格走
-- **不要修改 `handoff/sessions/2026-05-12-evening-session.md`**（这就是本文件）——你是消费者不是生产者
+- **不要修改 `experiments/sessions/2026-05-12-evening-session.md`**（这就是本文件）——你是消费者不是生产者
 
 ---
 
@@ -230,8 +230,8 @@ handoff/results/
 你打开本 repo 后，第一条消息建议这样开头：
 
 ```
-我读完了 handoff/sessions/2026-05-12-evening-session.md，今晚的任务清楚了：
-按路径 C v2 流程跑 2-3 个 case 验证四条新原则，结果写进 handoff/results/。
+我读完了 experiments/sessions/2026-05-12-evening-session.md，今晚的任务清楚了：
+按路径 C v2 流程跑 2-3 个 case 验证四条新原则，结果写进 experiments/。
 
 请告诉我：
 1. 这台电脑装了 dreamina CLI 吗？没装的话你倾向用什么方式装？
@@ -248,7 +248,7 @@ handoff/results/
 
 跑完所有 case 后：
 
-1. 写 `handoff/results/summary.md`（用模板第 4 节）
+1. 写 `experiments/summary.md`（用模板第 4 节）
 2. 提示主理人：明天白天 `git pull` 即可看完整记录
 3. **不要 git commit / git push**（除非主理人明确要求）——主理人控制版本，你只产出文件
 
